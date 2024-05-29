@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background: url(./images/1c8032975647515c919c1e4b30138726.jpg);
+  width: 100vw;
+  height: 120vh;
+  background-size: cover;
+}
+.menuandsearch i {
+  font-size: 18px;
+  color: white;
+}
+.unreadlogo {
+  height: 18px;
+}
+.menuandsearch {
+  display: flex;
+  gap: 20px;
+  padding: 20px 100px;
+}
