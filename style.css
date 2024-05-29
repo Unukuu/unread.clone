@@ -3,29 +3,52 @@
   box-sizing: border-box;
 }
 header {
-  background: url(./images/1c8032975647515c919c1e4b30138726.jpg);
-  width: 100%;
-  height: 80vh;
+  background-color: rgb(0, 0, 0, 0.6);
+  background-image: url(./images/kids.jpeg);
+  background-blend-mode: darken;
+  overflow: hidden;
+  height: 120vh;
   background-size: cover;
   background-position: center;
 }
-.menuandsearch i {
-  font-size: 18px;
-  color: white;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 20px;
 }
-.unreadlogo {
-  height: 18px;
-  width: 200px;
+.searchsection {
   display: flex;
   justify-content: center;
-  border-right: solid white 1px;
+  align-items: center;
+  gap: 10px;
 }
-.menuandsearch {
+.searchandlogo {
+  width: 400px;
   display: flex;
-  gap: 20px;
-  padding: 20px 100px;
+  justify-content: space-between;
+  align-items: center;
 }
-.menuandsearch > button {
+.whiteline {
+  height: 18px;
+  color: white;
+  border: solid white 0.5px;
+}
+.menubutton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+.inputsection > i {
+  color: white;
+  font-size: 18px;
+}
+.inputsection > input {
+  background: none;
+  border: none;
+}
+::placeholder {
   border: none;
   background: none;
 }
