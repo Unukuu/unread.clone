@@ -4,9 +4,10 @@
 }
 header {
   background: url(./images/1c8032975647515c919c1e4b30138726.jpg);
-  width: 100vw;
-  height: 120vh;
+  width: 100%;
+  height: 80vh;
   background-size: cover;
+  background-position: center;
 }
 .menuandsearch i {
   font-size: 18px;
@@ -14,9 +15,17 @@ header {
 }
 .unreadlogo {
   height: 18px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  border-right: solid white 1px;
 }
 .menuandsearch {
   display: flex;
   gap: 20px;
   padding: 20px 100px;
+}
+.menuandsearch > button {
+  border: none;
+  background: none;
 }
