@@ -1,21 +1,21 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 header {
-  background-color: rgb(0, 0, 0, 0.6);
-  background-image: url(./images/kids.jpeg);
-  background-blend-mode: darken;
-  overflow: hidden;
-  height: 120vh;
-  background-size: cover;
+  background-image: linear-gradient(to top, black, rgb(0, 0, 0, 0.5)),
+    url(./images/kids.jpeg);
   background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 20px;
+  padding: 20px 30px;
 }
 .searchsection {
   display: flex;
@@ -43,12 +43,177 @@ nav {
 .inputsection > i {
   color: white;
   font-size: 18px;
+  opacity: 30%;
 }
 .inputsection > input {
   background: none;
   border: none;
+  outline: none;
+  color: white;
 }
 ::placeholder {
   border: none;
   background: none;
+  color: white;
+  opacity: 30%;
+}
+.nextnews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.socielicon {
+  color: white;
+  opacity: 50%;
+  display: flex;
+  gap: 10px;
+  margin-left: 80px;
+}
+.nextnews > p {
+  font-size: 12.6px;
+  color: white;
+  opacity: 50%;
+}
+.nextnews > span {
+  color: white;
+  font: 12.6px;
+}
+.nextnews > a {
+  font-size: 12.6px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 8px 18px;
+  border-radius: 18px 18px;
+}
+.bignews {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 61px;
+}
+.ardkidshover {
+  width: 446.4px;
+  height: 446.4px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.ardkids {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/kids.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.ardkids:hover {
+  transform: scale(1.1);
+}
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  width: 608.59px;
+}
+.maincontenttext > p {
+  color: white;
+  font-size: 36px;
+  font-weight: 900;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+.maincontenttext > span {
+  font-size: 36px;
+  font-weight: 900;
+  color: white;
+}
+.author {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.authorpic {
+  width: 44px;
+  height: 44px;
+  border: solid rgb(255, 255, 255, 0.5) 1px;
+  border-radius: 50%;
+  background-image: url(./images/author1.jpeg);
+  background-size: contain;
+}
+.maincontent > h1 {
+  color: #0078f8;
+  font-size: 14.4px;
+  font-weight: 900;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.authorname > p {
+  font-size: 12.6px;
+  color: white;
+}
+.tsengeg {
+  opacity: 50%;
+}
+.redaction {
+  margin: 50px 523px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 16.2px;
+  font-weight: 900;
+}
+.ihbagatemdeg {
+  background-color: rgb(255, 255, 255, 0.5);
+  font-weight: lighter;
+  padding: 6px 18px;
+  border-radius: 18px;
+  display: flex;
+  gap: 10px;
+}
+.dailynews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.dailynewsbox {
+  width: 245.4px;
+  height: 362.43px;
+  border-radius: 15px;
+  border: solid aqua 2px;
+}
+.slider1 {
+  background-image: url(./images/khangal.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.niitelsenmin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0078f8;
 }
