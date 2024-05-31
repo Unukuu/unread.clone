@@ -3,6 +3,9 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+body {
+  background-color: #fafafa;
+}
 header {
   background-image: linear-gradient(to top, black, rgb(0, 0, 0, 0.5)),
     url(./images/kids.jpeg);
@@ -136,6 +139,12 @@ nav {
   gap: 10px;
   align-items: center;
 }
+
+.author-right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
 .authorpic {
   width: 44px;
   height: 44px;
@@ -163,7 +172,7 @@ nav {
     opacity: 1;
   }
 }
-.authorname > p {
+.authorname {
   font-size: 12.6px;
   color: white;
 }
@@ -196,19 +205,27 @@ nav {
 .dailynewsbox {
   width: 245.4px;
   height: 362.43px;
+  padding: 10px;
   border-radius: 15px;
-  border: solid aqua 2px;
-}
-.slider1 {
-  background-image: url(./images/khangal.jpeg);
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgb(0, 0, 0, 0.3) 5px 10px 8px;
+  transition: all 0.3s ease-in-out;
+}
+.dailynewsbox:hover {
+  transform: scale(1.2);
+}
+.slider1 {
+  background-image: linear-gradient(to top, black, rgb(255, 255, 255, 0)),
+    url(./images/khangal.jpeg);
 }
 .niitelsenmin {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   color: white;
 }
 .dot {
@@ -216,4 +233,162 @@ nav {
   height: 8px;
   border-radius: 50%;
   background-color: #0078f8;
+}
+.dailynewsgarchig {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16.2px;
+}
+.garchig {
+  font-weight: 700;
+}
+.newslasttext {
+  background-color: #0078f8;
+  border-radius: 10px;
+  padding: 1px 11px 1px 11px;
+  font-size: 12.6px;
+}
+.slider2 {
+  background-image: linear-gradient(to top, black, rgb(255, 255, 255, 0)),
+    url(./images/bookbrownbg.png);
+  background-position: left;
+}
+.slider3 {
+  background-image: linear-gradient(to top, black, rgb(255, 255, 255, 0)),
+    url(./images/masters.png);
+}
+.slider4 {
+  background-image: linear-gradient(to top, black, rgb(255, 255, 255, 0)),
+    url(./images/magicstore.png);
+  background-position: right;
+}
+.slider5 {
+  background-image: linear-gradient(to top, black, rgb(255, 255, 255, 0)),
+    url(./images/randomguy.jpeg);
+}
+article {
+  margin-top: 300px;
+}
+.article_left {
+  margin: auto;
+  width: 1116px;
+  height: 280px;
+}
+.authorname_e {
+  font-size: 12.6px;
+}
+.authordate {
+  opacity: 50%;
+}
+.authorpic1 {
+  width: 44px;
+  height: 44px;
+  border: solid rgb(255, 255, 255, 0.5) 1px;
+  border-radius: 50%;
+  background-image: url(./images/enkhmunkh.jpeg);
+  background-size: contain;
+}
+.articletext {
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: 5px 10px 8px 10px rgb(0, 0, 0, 0.1);
+  border-radius: 0 15px 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 739px;
+  height: 183px;
+  padding: 28px 65px 20px 51px;
+  gap: 30px;
+}
+.articleimg {
+  width: 135px;
+  height: 135px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+.articletextmain {
+  width: 400.76px;
+}
+.articletextmain > h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: -18px;
+  font-size: 12.6px;
+  color: #0078f8;
+}
+.articletextmain > h2 {
+  font-size: 21.6px;
+}
+.article_right {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 1116px;
+  height: 280px;
+  align-items: flex-end;
+}
+.article_right > .articletext {
+  border-radius: 15px 0 15px 15px;
+}
+.articlepic1 {
+  background-image: url(./images/garage.jpeg);
+}
+.articlepic2 {
+  background-image: url(./images/pigkids.jpeg);
+}
+.articlepic3 {
+  background-image: url(./images/numur.jpeg);
+  background-position: left;
+}
+.articlepic4 {
+  background-image: url(./images/kids.jpeg);
+  background-position: left;
+}
+.articlepic5 {
+  background-image: url(./images/apps.jpeg);
+}
+.articlepic6 {
+  background-image: url(./images/toyota.jpeg);
+}
+.articlepic7 {
+  background-image: url(./images/1c8032975647515c919c1e4b30138726.jpg);
+}
+.articlepic8 {
+  background-image: url(./images/daddykids.jpeg);
+}
+.authorpic2 {
+  width: 44px;
+  height: 44px;
+  border: solid rgb(255, 255, 255, 0.5) 1px;
+  border-radius: 50%;
+  background-image: url(./images/author2.jpeg);
+  background-size: contain;
+}
+.authorpic3 {
+  width: 44px;
+  height: 44px;
+  border: solid rgb(255, 255, 255, 0.5) 1px;
+  border-radius: 50%;
+  background-image: url(./images/unreadzurag.jpeg);
+  background-size: contain;
+}
+.authorpic4 {
+  width: 44px;
+  height: 44px;
+  border: solid rgb(255, 255, 255, 0.5) 1px;
+  border-radius: 50%;
+  background-image: url(./images/author3.jpeg);
+  background-size: contain;
+}
+.authorpic5 {
+  width: 44px;
+  height: 44px;
+  border: solid rgb(255, 255, 255, 0.5) 1px;
+  border-radius: 50%;
+  background-image: url(./images/author5.png);
+  background-size: contain;
 }
