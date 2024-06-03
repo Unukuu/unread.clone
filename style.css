@@ -272,6 +272,7 @@ article {
   margin-top: 300px;
 }
 .article_left {
+  transition: all 0.2s ease;
   margin: auto;
   width: 1116px;
   height: 280px;
@@ -293,7 +294,7 @@ article {
 .articletext {
   margin-top: 10px;
   background-color: white;
-  box-shadow: 5px 10px 8px 10px rgb(0, 0, 0, 0.1);
+  box-shadow: 3px 5px 4px 5px rgb(0, 0, 0, 0.1);
   border-radius: 0 15px 15px 15px;
   display: flex;
   justify-content: space-between;
@@ -301,6 +302,7 @@ article {
   height: 183px;
   padding: 28px 65px 20px 51px;
   gap: 30px;
+  transition: all 0.2s ease;
 }
 .articleimg {
   width: 135px;
@@ -324,6 +326,7 @@ article {
   font-size: 21.6px;
 }
 .article_right {
+  transition: all 0.2s ease;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -391,4 +394,129 @@ article {
   border-radius: 50%;
   background-image: url(./images/author5.png);
   background-size: contain;
+}
+.article_left:hover {
+  transform: translate(0, -10px);
+}
+.article_right:hover {
+  transform: translate(0, -10px);
+}
+.articletext:hover {
+  box-shadow: 5px 10px 8px 10px rgb(0, 0, 0, 0.1);
+}
+.allnewsdate {
+  width: 60%;
+  margin: auto;
+  border-bottom: solid 1px rgb(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  font-size: 13.5px;
+  margin-bottom: 50px;
+}
+.datebox {
+  padding: 20px 12px;
+}
+.datebox_1 {
+  font-weight: 700;
+  color: #0078f8;
+  border-bottom: #0078f8 1px solid;
+}
+.datebox_2,
+.datebox_3 {
+  text-align: center;
+}
+.datebox_4 {
+  text-align: end;
+}
+.datebox:hover {
+  color: #0078f8;
+  border-bottom: 1px solid #0078f8;
+}
+.allnewsphoto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  margin: auto;
+  gap: 19px;
+}
+.photosize {
+  border: 1px black solid;
+  border-radius: 15px;
+}
+.allnewsgridleft {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 361.48px 234.23px;
+  gap: 19px;
+}
+.allnewsgridright {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 271.92px 323.98px;
+  gap: 19px;
+}
+.box1 {
+  position: relative;
+  grid-column: 2 span;
+  background-image: url(./images/copilot.jpeg);
+  background-size: cover;
+  background-position: left;
+}
+.backimg {
+  position: absolute;
+  width: 100%;
+  height: 108px;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgb(255, 255, 255, 0.1),
+    rgb(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 15px;
+}
+.box1text {
+  padding: 20px;
+  width: 60%;
+  height: 108px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  bottom: 0;
+}
+.box1text > h1 {
+  font-size: 12.6px;
+  opacity: 50%;
+  font-weight: lighter;
+}
+.box1text > p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.hugatsaa {
+  transform: translate(-30px, 12px);
+  font-size: 12.6px;
+  padding: 5px 15px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255, 0.2);
+  position: absolute;
+  bottom: 30%;
+  right: 0;
+  z-index: 2;
+  color: white;
+}
+.box2 {
+  position: relative;
+  background-image: url(./images/simple.png);
+  background-size: cover;
+  background-position: center;
+}
+.box2 > .box1text {
+  width: 100%;
+  padding: 20px;
 }
