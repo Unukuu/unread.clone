@@ -28,9 +28,8 @@ nav {
   gap: 10px;
 }
 .searchandlogo {
-  width: 400px;
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   align-items: center;
 }
 .whiteline {
@@ -45,9 +44,8 @@ nav {
   font-size: 18px;
 }
 .inputsection > i {
-  color: white;
+  color: rgb(255, 255, 255, 0.3);
   font-size: 18px;
-  opacity: 30%;
 }
 .inputsection > input {
   background: none;
@@ -199,12 +197,18 @@ nav {
   gap: 10px;
 }
 .dailynews {
-  position: absolute;
+  /* left: 50%;
+  transform: translate(-50%, 0); */
+  width: 80%;
+  margin: auto;
+  margin-top: -150px;
+  position: relative;
   display: flex;
-  width: 100%;
   justify-content: center;
-  align-items: center;
   gap: 28px;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 50px;
 }
 .dailynewsbox {
   width: 245.4px;
@@ -651,6 +655,7 @@ section {
   width: 650px;
   height: 404px;
   color: white;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -666,6 +671,7 @@ section {
   display: flex;
   justify-content: space-between;
   width: 80%;
+  gap: 150px;
 }
 .bulan {
   width: 100%;
@@ -733,4 +739,31 @@ section {
 }
 .fa-soundcloud:hover {
   color: #f50;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .ardkidshover {
+    display: none;
+  }
+  .nextnews {
+    display: none;
+  }
+  .searchsection {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .inputsection > input {
+    display: none;
+  }
+  .inputsection > i {
+    color: white;
+  }
+  .ihbagatemdeg {
+    display: none;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
 }
