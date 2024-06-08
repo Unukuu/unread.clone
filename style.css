@@ -88,7 +88,21 @@ nav {
   background-color: rgb(255, 255, 255, 0.5);
   padding: 8px 18px;
   border-radius: 18px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
+.animationdot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0077b5;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 .bignews {
   margin-top: 100px;
   display: flex;
@@ -399,14 +413,14 @@ nav {
   background-image: url(./images/author5.png);
   background-size: contain;
 }
-.article_left:hover {
+/* .article_left:hover {
   transform: translate(0, -10px);
 }
 .article_right:hover {
   transform: translate(0, -10px);
-}
-.articletext:hover {
-  box-shadow: 5px 10px 8px 10px rgb(0, 0, 0, 0.1);
+} */
+.articletext:hover .article_left {
+  transform: translate(0, -10px);
 }
 .allnewsdate {
   width: 80%;
@@ -810,6 +824,9 @@ section {
   .footerredac {
     gap: 20px;
   }
+  .footerunreadlogo {
+    margin: auto;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .ardkidshover {
@@ -841,6 +858,33 @@ section {
   }
   .menuandcontact {
     justify-content: space-between;
+  }
+
+  .bulan {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .footertext {
+    width: 100%;
+    gap: 20px;
+  }
+  .menuandcontact {
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .socieliconlast {
+    margin-top: 50px;
+  }
+  .footerredac {
+    gap: 20px;
+  }
+  .footerunreadlogo {
+    margin: auto;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
